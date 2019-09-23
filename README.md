@@ -1,7 +1,4 @@
-## Documentation
-https://bit.ly/ion2fullapp-elite-version-documentation
-
-##Config
+# Config
 You need to replace all values from src/environment/environment.ts with your own values.
 
 # Workflow
