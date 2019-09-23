@@ -1,0 +1,169 @@
+page-blog-post {
+  .blog-post {
+    padding: 16px;
+
+    .post-title {
+      display: block;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      margin: 2px 0;
+      padding: 8px 0;
+      margin-bottom: 12px;
+      letter-spacing: 1.1px;
+      color: $theme-color-2;
+    }
+
+    .post-content {
+      margin: 0 0 2px;
+      font-size: 1.4rem;
+      color: $black-c;
+      line-height: 1.4;
+
+      img
+      {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+    }
+  }
+  .post-category-col {
+    flex-grow: 0;
+    width: auto;
+    flex-basis: auto;
+
+    .post-category-badge
+    {
+      background-color: $theme-color-2;
+    }
+  }
+
+  .post-date {
+    align-self: center;
+    color: $theme-color-2;
+  }
+
+  .post-author {
+    color: $theme-color-2;
+  }
+
+  .list-divider
+  {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    color: $theme-color-3;
+
+    &:not(:first-child)
+    {
+      padding-top: 30px;
+    }
+  }
+
+  .categories-content {
+    margin-bottom: 20px;
+  }
+
+  .comments-content {
+    .comment-item {
+      padding: 12px;
+      border: none;
+      box-shadow: inset 0 -0.5px 0 0 $black-d;
+      align-items: flex-start;
+
+      ion-avatar {
+        flex: 0 0 16%;
+        max-width: 16%;
+        margin: 0px;
+        align-self: flex-start;
+        margin: 0 16px 0 0!important;
+
+        .user-image
+        {
+          border-radius: 50%;
+        }
+      }
+
+      .item-inner
+      {
+        padding: 0px;
+        padding-left: 12px;
+        border: none;
+        margin-top: 8px;
+
+        ion-label {
+          margin: 0px;
+        }
+      }
+
+      .item-title
+      {
+        font-size: 1.4rem;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        color: $theme-color-2;
+        margin-bottom: 4px;
+      }
+
+      .item-description
+      {
+        font-size: 1.2rem;
+        letter-spacing: 0.2px;
+        color: $white-d;
+        text-overflow: initial;
+        overflow: initial;
+        white-space: initial;
+      }
+
+      .item-time
+      {
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $white-d;
+        margin: 0px;
+        padding-left: 8px;
+        align-self: flex-start;
+      }
+    }
+  }
+
+
+  .blog-post-footer
+  {
+    ion-toolbar {
+      padding: 10px;
+      background: transparent;
+
+      .toolbar-background
+      {
+        border: none;
+        background: transparent;
+      }
+    }
+
+    .create-comment
+    {
+      margin: 0px;
+      @include call-to-action-button-styles(color($colors, button-alt), $white);
+    }
+  }
+  ion-spinner {
+    opacity: 0.6;
+    align-self: center;
+  }
+}
+
+.comment-alert {
+
+  .alert-message {
+    color: $black-c;
+  }
+
+  .alert-head {
+    color: $theme-color-2;
+  }
+  .alert-button {
+    color: $theme-color-2;
+  }
+
+}

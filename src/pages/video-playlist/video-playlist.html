@@ -1,0 +1,60 @@
+<ion-header class="video-playlist-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>{{'VIDEO_PLAYLIST' | translate}}</ion-title>
+    <ion-buttons end>
+      <button class="share-button" ion-button icon-only (click)="shareVideo()">
+        <ion-icon name="md-share"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="video-playlist-content">
+	<div class="video-player-container">
+		<vg-player class="video-player" (onPlayerReady)="onPlayerReady($event)">
+			<vg-buffering></vg-buffering>
+			<vg-overlay-play></vg-overlay-play>
+
+			<vg-controls [vgAutohide]="true" [vgAutohideTime]="5">
+				<ion-row class="controls-row">
+					<ion-col no-padding width-18>
+						<vg-time-display [vgProperty]="'current'" [vgFormat]="'mm:ss'"></vg-time-display>
+					</ion-col>
+					<ion-col no-padding width-64>
+						<vg-scrub-bar>
+								<vg-scrub-bar-current-time></vg-scrub-bar-current-time>
+								<vg-scrub-bar-buffering-time></vg-scrub-bar-buffering-time>
+						</vg-scrub-bar>
+					</ion-col>
+					<ion-col no-padding width-18>
+						<vg-time-display [vgProperty]="'left'" [vgFormat]="'mm:ss'"></vg-time-display>
+					</ion-col>
+				</ion-row>
+	    </vg-controls>
+
+			<video class="expand-horizontally" #player_video [vgMedia]="player_video" id="player-video" preload="auto">
+	      <source *ngFor="let video of video_playlist_model.selected_video.sources" [src]="video.src" [type]="video.type">
+	    </video>
+	  </vg-player>
+	</div>
+
+	<ion-row class="video-data-row">
+		<ion-col no-padding>
+			<h2 class="video-title">{{ video_playlist_model.selected_video.title }}</h2>
+			<p class="video-description">{{ video_playlist_model.selected_video.description }}</p>
+		</ion-col>
+	</ion-row>
+
+	<ion-list class="video-playlist">
+	  <ion-item class="playlist-item" *ngFor="let media of video_playlist_model.video_playlist">
+			<ion-thumbnail class="media-thumbnail" item-left (click)="playMedia(media)">
+	      <preload-image class="media-thumbnail-image" [ratio]="{w:16, h:9}" [src]="media.thumbnail"></preload-image>
+	    </ion-thumbnail>
+			<h2 class="media-title">{{ media.title }}</h2>
+	    <p class="media-description" rows="2">{{ media.description }}</p>
+	  </ion-item>
+	</ion-list>
+</ion-content>

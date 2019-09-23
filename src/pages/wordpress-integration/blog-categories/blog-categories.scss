@@ -1,0 +1,39 @@
+// Common list styles can be found in "./common.styles/layouts/lists"
+page-blog-categories {
+
+	.list-mini-content
+	{
+		background-color: color($colors, background, base);
+
+		.list-mini
+		{
+			@include layout-list-styles($theme-color-2, $white-d);
+
+			ion-list {
+				.list-item
+				{
+					.content-row
+					{
+						.item-title{
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+						}
+
+						&.one-line
+						{
+							align-items: center;
+
+							.item-description
+							{
+								overflow: hidden;
+								text-overflow: ellipsis;
+								white-space: nowrap;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

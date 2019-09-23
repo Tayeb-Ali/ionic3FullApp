@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Categories</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="list-mini-content">
+  <div class="list-mini">
+    <ion-list>
+      <button class="list-item" ion-item *ngFor="let category of categories" (click)="itemTapped($event, category)">
+        <ion-row no-padding class="content-row one-line">
+          <ion-col no-padding class="item-content">
+            <h3 class="item-title">{{category.name}}</h3>
+            <p class="item-description">{{category.description}}</p>
+          </ion-col>
+          <ion-col no-padding width-10 class="item-icon">
+            <ion-icon name="arrow-forward"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </button>
+    </ion-list>
+  </div>
+</ion-content>

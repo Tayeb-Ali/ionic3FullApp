@@ -1,0 +1,37 @@
+page-blog-feed {
+  .content{
+    background-color: color($colors, background, base);
+
+    .feed-item
+		{
+			@include basic-card-styles($white-d);
+
+      .item-image
+      {
+        height: 160px;
+        background-position-x: center;
+        background-position-y: center;
+      }
+
+      .item-title
+			{
+				margin: 0px;
+				margin-bottom: 12px;
+				padding: 0px;
+				letter-spacing: 1.1px;
+				color: $theme-color-2;
+			}
+      .item-date
+      {
+        align-self: center;
+        color: $theme-color-2;
+        font-style: italic;
+      }
+		}
+  }
+
+  [ion-button].read-more{
+    @include call-to-action-button-styles(color($colors, button-alt), $white);
+    font-size: 1.4rem;
+  }
+}

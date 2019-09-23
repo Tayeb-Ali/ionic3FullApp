@@ -1,0 +1,48 @@
+@mixin basic-input-style($background, $text-color, $placeholder-color){
+	&.item
+	{
+		padding: 0px;
+		background-color: $background;
+
+		.item-inner
+		{
+			padding: 0px 0.6rem;
+		}
+
+		.text-input
+		{
+			margin-right: 0px;
+			margin-left: 0px;
+			width: 100%;
+			padding: 0px;
+			color: $text-color;
+			// TODO: borrar
+			// @include placeholder {
+			// 	color: $placeholder-color;
+			// }
+		}
+	}
+}
+
+@mixin basic-select-style($background, $text-color, $placeholder-color){
+	&.item-select
+	{
+		ion-select {
+			.select-text,
+			.select-icon
+			{
+				color: $text-color;
+			}
+		}
+	}
+}
+
+@import "./range";
+@import "./checkbox";
+@import "./radio";
+@import "./checkbox-tags";
+@import "./radio-tags";
+@import "./switcher";
+@import "./counter";
+@import "./rating";
+@import "./color-radio";

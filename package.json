@@ -20,19 +20,45 @@
     "@angular/http": "5.2.11",
     "@angular/platform-browser": "5.2.11",
     "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/app-rate": "4.5.2",
     "@ionic-native/core": "~4.20.0",
+    "@ionic-native/crop": "4.5.2",
+    "@ionic-native/email-composer": "4.5.2",
+    "@ionic-native/image-picker": "4.5.2",
+    "@ionic-native/in-app-browser": "4.5.2",
+    "@ionic-native/native-storage": "4.5.2",
+    "@ionic-native/social-sharing": "4.5.2",
     "@ionic-native/splash-screen": "~4.20.0",
     "@ionic-native/status-bar": "~4.20.0",
     "@ionic/storage": "2.2.0",
+    "@ngx-translate/core": "9.1.1",
+    "@ngx-translate/http-loader": "2.0.1",
+    "@types/googlemaps": "3.25.38",
+    "angular2-text-mask": "8.0.4",
+    "bourbon": "5.0.0",
+    "com.synconset.imagepicker": "^2.1.10",
+    "cordova-plugin-crop": "^0.3.1",
+    "cordova-plugin-email-composer": "^0.8.15",
+    "cordova-plugin-telerik-imagepicker": "^2.3.3",
+    "google-libphonenumber": "3.0.9",
     "ionic-angular": "3.9.5",
     "ionicons": "3.0.0",
     "rxjs": "5.5.11",
     "sw-toolbox": "3.6.0",
+    "text-mask-addons": "3.5.1",
+    "videogular2": "6.0.1",
     "zone.js": "0.8.29"
   },
   "devDependencies": {
     "@ionic/app-scripts": "3.2.2",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-telerik-imagepicker": {
+        "PHOTO_LIBRARY_USAGE_DESCRIPTION": "your usage message"
+      }
+    }
+  }
 }

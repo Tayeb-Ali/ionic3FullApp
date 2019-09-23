@@ -1,0 +1,17 @@
+@mixin spinner-size($size){
+	ion-spinner {
+    position: absolute;
+		width: $size;
+    height: $size;
+		line-height: inherit;
+		animation: none;
+		top: calc(50% - #{($size/2)});
+		left: calc(50% - #{($size/2)});
+  }
+}
+
+@mixin spinner-color($color){
+	ion-spinner * {
+	  fill: $color !important;
+	}
+}

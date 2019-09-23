@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title *ngIf="post">
+      Post
+    </ion-title>
+    <ion-buttons *ngIf="loggedUser" end>
+      <button ion-button icon-only (click)="logOut()">
+        <ion-icon class="toolbar-icon" name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons *ngIf="!loggedUser" end>
+      <button ion-button icon-only (click)="goToLogin()">
+        <ion-icon class="toolbar-icon" name="log-in"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="post" class="blog-post">
+    <div class="post-title" [innerHTML]="post.title.rendered"></div>
+    <p class="post-content" [innerHTML]="post.content.rendered"></p>
+    <ion-row>
+      <ion-col class="post-date">
+        <ion-icon name='md-calendar'></ion-icon>
+        {{post.date.split('T')[0]}}
+      </ion-col>
+      <ion-col *ngIf="post.author_details" class="post-author" text-right>
+        <ion-icon name="person"></ion-icon>
+        {{post.author_details.name}}
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-item-group class="categories-content">
+    <ion-item-divider class="list-divider">Categories</ion-item-divider>
+    <ion-grid>
+      <ion-spinner *ngIf="!content_ready" name="bubbles"></ion-spinner>
+      <ion-row *ngIf="content_ready">
+        <ion-col class="post-category-col" *ngFor="let category of post.categories_list">
+          <ion-badge class="post-category-badge" (click)="goToCategoryPosts(category.id, category.name)">{{category.name}}</ion-badge>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item-group>
+
+
+  <ion-item-group class="comments-content">
+    <ion-item-divider class="list-divider">Comments</ion-item-divider>
+    <ion-grid>
+      <ion-spinner *ngIf="!content_ready" name="bubbles"></ion-spinner>
+    </ion-grid>
+    <div *ngIf="content_ready">
+      <ion-item class="comment-item" *ngFor="let comment of post.comments">
+        <ion-avatar item-left>
+          <preload-image class="user-image" [ratio]="{w:1, h:1}" [src]="comment.author_avatar_urls[24]"></preload-image>
+        </ion-avatar>
+        <h2 class="item-title">{{comment.author_name}}</h2>
+        <p class="item-description" [innerHTML]="comment.content.rendered"></p>
+        <ion-note class="item-time" item-right>{{comment.date.split('T')[0]}}</ion-note>
+      </ion-item>
+    </div>
+  </ion-item-group>
+  <ion-infinite-scroll [enabled]="morePagesAvailable" (ionInfinite)="loadMoreComments($event)">
+    <ion-infinite-scroll-content
+    loadingSpinner="bubbles"
+    loadingText="Loading more comments...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+<ion-footer class="blog-post-footer">
+ <ion-toolbar>
+  <button class="create-comment" ion-button block (click)="createComment()">Add a Comment</button>
+ </ion-toolbar>
+</ion-footer>

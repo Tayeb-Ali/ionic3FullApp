@@ -1,0 +1,36 @@
+page-blog-custom-page {
+	.blog-page {
+		padding: 16px;
+
+		.page-title {
+			display: block;
+			font-size: 1.8rem;
+			line-height: 1.2;
+			margin: 2px 0;
+			padding: 8px 0;
+			margin-bottom: 12px;
+			letter-spacing: 1.1px;
+			color: $theme-color-2;
+		}
+
+		.page-content {
+			margin: 0 0 2px;
+			font-size: 1.4rem;
+			color: $black-c;
+			line-height: 1.4;
+
+			img
+			{
+				width: 100%;
+				height: auto;
+				border-radius: 4px;
+			}
+		}
+
+		.page-date {
+			margin-top: 30px;
+			color: $theme-color-2;
+		}
+	}
+
+}

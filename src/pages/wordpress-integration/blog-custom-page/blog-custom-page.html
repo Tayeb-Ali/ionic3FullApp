@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Custom Page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="custom-page-content">
+  <div *ngIf="page" class="blog-page">
+    <div class="page-title" [innerHTML]="page.title.rendered"></div>
+    <p class="page-content" [innerHTML]="page.content.rendered"></p>
+    <p class="page-date">Published on {{page.date.split('T')[0]}}</p>
+  </div>
+</ion-content>

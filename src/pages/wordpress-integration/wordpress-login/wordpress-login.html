@@ -1,0 +1,22 @@
+<ion-header class="login-header auth-header">
+  <ion-navbar>
+    <ion-title>Login with Wordpress</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content auth-content">
+  <form class="login-form auth-form" [formGroup]="login_form" (ngSubmit)="login(login_form.value)">
+    <ion-item>
+      <ion-input type="text" placeholder="Username" formControlName="username" value='aa' required></ion-input>
+    </ion-item>
+    <show-hide-container>
+      <ion-item>
+        <ion-input type="password" placeholder="Password" formControlName="password" value='aa' show-hide-input required></ion-input>
+      </ion-item>
+    </show-hide-container>
+
+    <p class="error-message" *ngIf="error_message">{{error_message}}</p>
+
+    <button ion-button block class="auth-action-button login-button" type="submit" [disabled]="!login_form.valid" type="submit">Login</button>
+  </form>
+</ion-content>
