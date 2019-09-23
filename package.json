@@ -1,8 +1,8 @@
 {
   "name": "ionic3full",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "version": "1.0.1",
+  "author": "Elteyab Hassan",
+  "homepage": "https://tayeb-ali.github.io/",
   "private": true,
   "scripts": {
     "start": "ionic-app-scripts serve",
