@@ -3,8 +3,7 @@ You need to replace all values from src/environment/environment.ts with your own
 
 ## Preview
 
-| Final Result | Header | Footer |
-| ---- | ---- | ---- |
+
 | <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2007.49.08.png" width="250"/> | 
 <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2007.49.14.png" width="250"/> | 
 <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2007.49.14.png" width="250"/> |
@@ -26,6 +25,21 @@ You need to replace all values from src/environment/environment.ts with your own
 | <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.42.png" width="250"/> | 
 <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.44.png" width="250"/> | 
 <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.56.png" width="250"/> |
+
+
+| <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.44.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.56.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.02.06.png" width="250"/> |
+
+
+| <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.02.12.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.02.16.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.02.22.png" width="250"/> |
+
+
+| <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.02.46.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.02.58.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.03.14.png" width="250"/> |
 
 
 
