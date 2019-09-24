@@ -1,6 +1,34 @@
 # Config
 You need to replace all values from src/environment/environment.ts with your own values.
 
+## Preview
+
+| Final Result | Header | Footer |
+| ---- | ---- | ---- |
+| <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2007.49.08.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2007.49.14.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2007.49.14.png" width="250"/> |
+
+| <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2007.59.57.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.00.10.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.00.21.png" width="250"/> |
+
+| <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.00.26.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.00.36.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.09.png" width="250"/> |
+
+
+| <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.17.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.22.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.32.png" width="250"/> |
+
+
+| <img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.42.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.44.png" width="250"/> | 
+<img src="https://github.com/Tayeb-Ali/ionic3FullApp/blob/master/ScreenShot/Screen%20Shot%202019-09-24%20at%2008.01.56.png" width="250"/> |
+
+
+
 # Workflow
 ##To run your app in the browser (great for initial development):
 - Install all the npm dependencies
